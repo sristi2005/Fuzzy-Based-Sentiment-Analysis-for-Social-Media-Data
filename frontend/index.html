@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Sentiment Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="container glass-panel">
+        <header>
+            <h1>Fuzzy Sentiment Analysis</h1>
+            <p>Type in your social media text to analyze its nuanced sentiment using Fuzzy Logic.</p>
+        </header>
+
+        <section class="input-section">
+            <textarea id="social-text" placeholder="Enter social media post here..." rows="4"></textarea>
+            <button id="analyze-btn" class="glow-on-hover">Analyze Sentiment</button>
+        </section>
+
+        <section id="loading-indicator" class="hidden">
+            <div class="spinner"></div>
+            <p>Running NLP & Fuzzy Logic Inference...</p>
+        </section>
+
+        <section id="results-section" class="hidden glass-panel inner-panel">
+            <h2>Analysis Results</h2>
+            
+            <div class="main-result">
+                <h3>Final Fuzzy Label</h3>
+                <div class="label-badge" id="fuzzy-label">Neutral</div>
+                
+                <div class="score-container">
+                    <div class="score-fill" id="fuzzy-score-bar"></div>
+                    <span class="score-text" id="fuzzy-score-text">0/100</span>
+                </div>
+            </div>
+
+            <div class="breakdown">
+                <div class="metric">
+                    <h4>VADER Score</h4>
+                    <p class="desc">Lexicon Compound Score (-1 to 1)</p>
+                    <div class="val" id="vader-val">0.0</div>
+                </div>
+                <div class="metric">
+                    <h4>TextBlob Polarity</h4>
+                    <p class="desc">Subjectivity Score (-1 to 1)</p>
+                    <div class="val" id="textblob-val">0.0</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

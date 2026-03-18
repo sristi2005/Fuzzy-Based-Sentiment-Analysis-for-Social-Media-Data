@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+nltk
+textblob
+scikit-fuzzy
+numpy
+pydantic
+python-multipart
