@@ -28,11 +28,17 @@ The system intelligently combines **VADER compound scores** and **TextBlob polar
 # Features
 
 • Hybrid NLP sentiment analysis using **VADER + TextBlob**
+
 • **Fuzzy Inference System** for sentiment decision making
+
 • Real-time sentiment analysis via **FastAPI backend**
+
 • Modern **glassmorphism UI design**
+
 • Animated sentiment progress bar/gauge
+
 • Handles **mixed sentiment statements intelligently**
+
 • Lightweight and fast API processing
 
 ---
